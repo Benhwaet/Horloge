@@ -3,17 +3,34 @@ $(document).ready(function() {
 //   var currentTime = (present.format('dddd, MMMM D YYYY, h:mm:ss a'))
 // $("#currentDay").text(present);
 var currentDay = $("#currentDay");
-var present = dayjs();
+var present = dayjs().format("dddd, MMMM D YYYY, HH:mm a");
 
+currentDay.text(present);
 
-  // do stuff when DOM is ready
+var presentHour = dayjs().format("HH");
+var roundHour = (presentHour + ":00");
+console.log(roundHour);
+var hourText = $(".hour-text");
 
-var currentDay = $("#currentDay");
-
-dayjs().format();
 var timeBlock = $(".time-block");
+console.log(timeBlock.length);
+var label = $("<label>");
+  // do stuff when DOM is ready
+function status(label){
+// for (i=0; 0 <= timeBlock.length; i++) {
+  if (roundHour === hourText) {
+  timeBlock.addClass("past");
+} else if (roundHour > hourText) {
+  timeBlock.addClass("present");
+} else if (roundHour < hourText) {
+  timeBlock.addClass("future");
+}
+};
 
-console.log(present)
+status();
+// dayjs().format();
+
+});
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -58,4 +75,3 @@ $(function () {
  // write-in text of current dayjs value to html
   });
   
-});
