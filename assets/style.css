@@ -1,14 +1,25 @@
+* {
+  background-image: url(assets/images/background-1660920_1280.jpg);
+}
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-family: cursive, serif;
+    font-size: 2em;
+    /* background-color:  #ab793b; */
+    background-image: url(assets/images/background-1660920_1280.jpg);
+    /* background-position: right bottom, left top; */
+    /* background-repeat: no-repeat, repeat; */
   }
   
+  .lead {
+    font-size: xx-large;
+  }
   textarea {
-    background: transparent;
-    border: none;
+    border: groove;
+    border-radius: 5px;
     resize: none;
+    font-size: 20px;
     color: #000000;
-    border-left: 1px solid black;
+    border-left: 5px ridge;
     padding: 10px;
   }
   
@@ -18,25 +29,26 @@ body {
   
   .time-block {
     border-radius: 15px;
+    margin: 10px;
   }
   
   .row {
-    border-top: 1px solid white;
+    border-top: 1px solid rgb(34, 22, 10);
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: #ab793b;
     color: #000000;
-    border-top: 1px dashed #000000;
+    /* border-top: 1px dashed #000000; */
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #c2bcbc;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #fa974c;
     color: white;
   }
   
@@ -47,9 +59,9 @@ body {
   
   .saveBtn {
     border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(184, 115, 51);
     color: white;
   }
   
