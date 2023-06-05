@@ -11,11 +11,13 @@ body {
     font-size: xx-large;
   }
 
-  #currentDay {
-    font-family:'Courier New', Courier, monospace;
+  #horloge {
+    font-family: monospace;
     color: goldenrod;
-    font-style: bold;
+    font-size: x-large;
+    font-weight: bolder;
   }
+
   textarea {
     border: groove;
     border-radius: 5px;
@@ -74,5 +76,5 @@ body {
   }
   
   /* .saveIcon {
-    background-image: url(assets/images/wallpaperflare.com_wallpaper.jpg); 
+    background-image: url(assets/images/wallpaperflare.com_wallpaper.jpg);
   } */
