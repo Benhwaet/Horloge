@@ -1,10 +1,6 @@
 body {
     font-family: cursive, serif;
     font-size: 2em;
-    /* background-color:  #ab793b; */
-    /* background-image: url(assets/images/background-1660920_1280.jpg); */
-    /* background-position: right bottom, left top; */
-    /* background-repeat: no-repeat, repeat; */
   }
   
   .lead {
@@ -44,8 +40,9 @@ body {
   .hour {
     background-color: #ab793b;
     color: #000000;
-    /* border-top: 1px dashed #000000; */
+    border-bottom: 1px dashed #000000; 
   }
+  
   
   .past {
     background-color: #c2bcbc;
@@ -66,8 +63,9 @@ body {
     border-left: 1px solid black;
     border-radius: 10px;
     border-bottom-right-radius: 10px;
-    /* background-color: rgb(184, 115, 51); */
-    /* color: white; */
+    font-size: large;
+    background-color: rgb(40, 81, 150);
+    color: white;
   }
   
   .saveBtn i:hover {
