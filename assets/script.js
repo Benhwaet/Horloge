@@ -1,7 +1,7 @@
 var title = $("h1");
 var lead = $(".lead");
-//display real time in lead
-// TODO: Add code to display the current date in the header of the page.
+
+//display current date and time in header
 var display = dayjs().format("dddd, MMMM D YYYY, HH:mm a");
 var horloge = $("#horloge");
 horloge.text(display);
@@ -14,49 +14,46 @@ console.log(currentHour);
 
 //To set saveBtn event
 var saveBtn = $(".saveBtn");
-
 var task = $(".task");
 var timeBlock = $(".time-block");
-
-
+var input = $("input");
+// Wrapper to ensure functions only run once page has completed loading
 $(document).ready(function() {
-
- // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. HINT: What does `this` reference in the click listener
-    // function? How can DOM traversal be used to get the "hour-x" id of the
-    // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
-
-// addEventListener to saveBtn, to target time-block by using 'this' syntax
-// to identify approptiate time-block container and save text data to local storage.
-saveBtn.on("click", function() {
-  var taskText = task.val();
-  console.log(taskText);
- localStorage.setItem("taskText", taskText);
-});
-
-
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
+    timeBlock.each(function(){
+      var buttonID = $(this).attr("id");
+      var textBox = $(this).children(".task");
+      textBox.val(localStorage.getItem(buttonID)); 
+      })
+// Saves the text entries in the input textarea to local storage 
+// with a key value of the time-block id which contains the save button in question. 
+    saveBtn.click(function(){
+      var taskText = $(this).prev().val();
+      var buttonID = $(this).parent().attr("id");
+      console.log(taskText);
+     localStorage.setItem(buttonID, taskText);
+    });
 
-// associate textarea of hourX to hourX saveBtn
-// write into local storage
-
+    
+// Function checks current time status and marks 
+// which calendar time is in the past, present, or future.
 function status() {
 timeBlock.each(function(){
   var formID = $(this).attr("id");
   if (formID < currentHour) {
     $(this).addClass("past");
   } else if (formID == currentHour){
-    $(this).removeClass("past")
+    // $(this).removeClass("past")
     $(this).addClass("present");
   } else if (formID > currentHour){
     $(this).addClass("future");
 }
-});
-} status()
+});  
+} 
+//Runs the time status fonction
+status()
 
 });
 
