@@ -2,7 +2,6 @@
 
 "Horloge! dieu sinistre, effrayant, impassible,
 Dont le doigt nous menace et nous dit: «Souviens-toi!..."*
-de tes tâches, tabarouette!
 *Everyone should experience the dramatics and existential dread of Charles Baudelaire.*
 (<https://fleursdumal.org/poem/218>)
 
@@ -40,15 +39,18 @@ THEN the saved events persist
 
 ## Usage
 
-Once the user navigates to this app, they should be able to record and event in each hour's text field and save these entries in local storage. The schedule alters every hour and reacts in real-time. All past hours are [greyed] out, the current hour is in [red], and future hours are in [green].
+Once the user navigates to this app/webpage, they should be able to record an event in each hour's text field and save these entries to local storage by pressing the save button. Upon refreshing the page, or closing and re-opening the page, the text remains if the save button has been pressed.
 
-Here is an image of an entry in progress that also highlights the color change associated to past, present, and future hours:
+The schedule alters every hour and reacts in real-time. All past hours are [greyed] out, the current hour is in [orange], and future hours are in [green].
 
-|insert image here|
+Here are two images of an entry that has been saved and remains after refresh. The images also highlight the color change associated to past, present, and future hours, and displays the current time in the header:
+
+![Alt text](assets/images/Screenshot%202023-06-05%20at%204.56.34%20PM.png)
+![Alt text](assets/images/Screenshot%202023-06-05%20at%204.58.32%20PM.png)
 
 ## Roadmap
 
-The project is now in the earliest stages of setting up all necessary assets and desribing the steps the project requires. Only the starter code and README have been added.
+The project now satisfies the user requirements and acceptance criteria. All that remains is additional styling if needed or wanted.
 
 ## Credits
 
