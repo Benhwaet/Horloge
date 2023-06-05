@@ -21,139 +21,139 @@
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"></script>
-    <title>Work Day Scheduler</title>
+    <title>Horloge</title>
   </head>
 
   <body>
     <header class="p-5 mb-4 text-center">
       <h1 class="display-1">Horloge</h1>
-      <p class="lead">The inorexable march of Time.</p>
-      <p id="currentDay" class="lead"><strong>''</strong></p>
+      <p class="lead">The inexorable march of Time.</p>
+      <p id="horloge" class="lead"></p>
     </header>
     <main class="calendar">
-      <form class="row time-block text-center">
-        <label for="hour01" name="hourText" class="hour-text col-md-1">06:00</label>
-        <input id="hour01" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="06" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">06:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour02" name="hourText" class="hour-text col-md-1">07:00</label>
-        <input id="hour02" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="07" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">07:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour03" name="hourText" class="hour-text col-md-1">08:00</label>
-        <input id="hour03" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="08" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">08:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour04" name="hourText" class="hour-text col-md-1">09:00</label>
-        <input id="hour04" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="09" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">09:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour05" name="hourText" class="hour-text col-md-1">10:00</label>
-        <input id="hour05" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="10" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">10:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour06" name="hourText" class="hour-text col-md-1">11:00</label>
-        <input id="hour06" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="11" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">11:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour07" name="hourText" class="hour-text col-md-1">12:00</label>
-        <input id="hour07" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="12" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">12:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour08" name="hourText" class="hour-text col-md-1">13:00</label>
-        <input id="hour08" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="13" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">13:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour09" name="hourText" class="hour-text col-md-1">14:00</label>
-        <input id="hour09" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="14" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">14:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour10" name="hourText" class="hour-text col-md-1">15:00</label>
-        <input id="hour10" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="15" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">15:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour11" name="hourText" class="hour-text col-md-1">16:00</label>
-        <input id="hour11" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="16" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">16:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour12" name="hourText" class="hour-text col-md-1">17:00</label>
-        <input id="hour12" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="17" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">17:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour13" name="hourText" class="hour-text col-md-1">18:00</label>
-        <input id="hour13" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="18" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">18:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour14" name="hourText" class="hour-text col-md-1">19:00</label>
-        <input id="hour14" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="19" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">19:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour15" name="hourText" class="hour-text col-md-1">20:00</label>
-        <input id="hour15" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="20" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">20:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour16" name="hourText" class="hour-text col-md-1">21:00</label>
-        <input id="hour16" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="21" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">21:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour17" name="hourText" class="hour-text col-md-1">22:00</label>
-        <input id="hour17" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="22" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">22:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
-      <form class="row time-block text-center">
-        <label for="hour18" name="hourText" class="hour-text col-md-1">23:00</label>
-        <input id="hour18" type="text" name="taskText" class="task col-md-10">
-        <button type="button" name="save" class="saveBtn col-md-1" aria-label="save">
+      <form id="23" class="row time-block text-center">
+        <label for="taskText" name="hourText" class="hour-text col-md-1">23:00</label>
+        <input type="text" name="taskText" class="task col-md-10">
+        <button type="button" name="submit" class="saveBtn col-md-1" aria-label="submit">
           <i class="saveIcon" aria-hidden="true"></i>
         </button>
       </form>
